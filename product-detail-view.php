@@ -143,23 +143,7 @@
 					?> </div>
                     <div class="products-code"> <span>Product Code :</span> <?php echo $result['productCode'];?></div>
                    
-               <!--      <div class="Sort-by">
-                      <label>Sort by</label>
-                      <select class="selectpicker form-control" id="select-by-size">
-                        <option selected="selected" value="#">S</option>
-                        <option value="#">M</option>
-                        <option value="#">L</option>
-                      </select>
-                    </div>
-                    <div class="Color">
-                      <label>Color</label>
-                      <select class="selectpicker form-control" id="select-by-color">
-                        <option selected="selected" value="#">Blue</option>
-                        <option value="#">Green</option>
-                        <option value="#">Orange</option>
-                        <option value="#">White</option>
-                      </select>
-                    </div> -->
+              
           
                       
                     <div class="product-qty">

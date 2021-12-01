@@ -13,10 +13,13 @@ $getApd = $pd->getOfferproductlimet();
                   while ($result = $getApd->fetch_assoc()) {
 
              ?>
-            <div class="item"><img style="width: 100%; height: 450px;"  src="<?php echo $result['image'] ?>" alt="main-banner1"> </div>
+            <div class="item"><a style="margin-top:-100px;" href="product-detail-view.php?productid=<?php echo $result['productId'];?>" >
+            <img style="width: 100%; height: 450px;"  src="<?php echo $result['image'] ?>" alt="main-banner1"> 
+            </a>
+            
+            </div>
           <?php }} ?>
-           <!--  <div class="item"><img src="images/product/slide2.jpg" alt="main-banner2"></div>
-            <div class="item"><img src="images/product/slide3.jpg" alt="main-banner3"></div> -->
+          
           </div>
         </div>
       </div>

@@ -300,7 +300,7 @@ public function singleproductquantity($id)
  
 	public function checkorderproducgt($id,$customerId)
 	{
-		$query = "SELECT * FROM tbl_order  WHERE productId= '$id' AND customerId=$customerId";
+		$query = "SELECT * FROM tbl_order  WHERE productId= '$id' AND customerId='$customerId'";
 				$result = $this->db->insert($query);
 			 
 					if(mysqli_num_rows($result)>0)
