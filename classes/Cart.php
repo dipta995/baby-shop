@@ -41,12 +41,13 @@ class Cart{
 				$insert_row = $this->db->insert($query);
 			if ($insert_row) {
 					echo "<script> window.location = 'cart.php';</script>";
-					return $msg;
+					 
 			}else{
 					echo "<script> window.location = 'error.php';</script>";
 			}
 		}	
-	}public function addToOrder($customerId){
+	}
+	public function addToOrder($customerId){
 	/*	$quantity = $this->fm->validation($quantity);
 		$quantity = mysqli_real_escape_string($this->db->link, $quantity);
 		$productId = mysqli_real_escape_string($this->db->link, $id);*/
@@ -84,7 +85,7 @@ class Cart{
 					
 				 
 			 	}
- echo "<script> window.location = 'checkout-final.php';</script>";
+ echo "<script> window.location = 'checkout-final1.php';</script>";
 	}
 	public function getCartProduct(){
 		$sId = session_id();

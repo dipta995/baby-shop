@@ -241,53 +241,7 @@ header("Pragma: no-cache")
                 
             
                 ?></span></a>
-            <!--   <ul class="dropdown-menu pull-right cart-dropdown-menu">
-                <li>
-                  <table class="table table-striped">
-                    <tbody>
-                      <tr>
-                        <td class="text-center"><a href="product.php"><img class="img-thumbnail" src="images/product/car3-70x92.jpg" alt="img"></a></td>
-                        <td class="text-left"><a href="#">Black African Print Pencil Skirt</a></td>
-                        <td class="text-right quality">X1</td>
-                        <td class="text-right price-new">$254.00</td>
-                        <td class="text-center"><button type="button" title="Remove" class="btn btn-xs remove"><i class="fa fa-times"></i></button></td>
-                      </tr>
-                      <tr>
-                        <td class="text-center"><a href="product.php"><img class="img-thumbnail" src="images/product/car3-70x92.jpg" alt="img"></a></td>
-                        <td class="text-left"><a href="#">Black African Print Pencil Skirt</a></td>
-                        <td class="text-right quality">X1</td>
-                        <td class="text-right price-new">$254.00</td>
-                        <td class="text-center"><button type="button" title="Remove" class="btn btn-xs remove"><i class="fa fa-times"></i></button></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </li>
-                <li>
-                  <div class="minitotal">
-                    <table class="table pricetotal">
-                      <tbody>
-                        <tr>
-                          <td class="text-right"><strong>Sub-Total</strong></td>
-                          <td class="text-right price-new">$210.00</td>
-                        </tr>
-                        <tr>
-                          <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
-                          <td class="text-right price-new">$2.00</td>
-                        </tr>
-                        <tr>
-                          <td class="text-right"><strong>VAT (20%)</strong></td>
-                          <td class="text-right price-new">$42.00</td>
-                        </tr>
-                        <tr>
-                          <td class="text-right"><strong>Total</strong></td>
-                          <td class="text-right price-new">$254.00</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="controls"> <a class="btn btn-primary pull-left" href="cart.php" id="view-cart"><i class="fa fa-shopping-cart"></i> View Cart </a> <a class="btn btn-primary pull-right" href="checkout.php" id="checkout"><i class="fa fa-share"></i> Checkout</a> </div>
-                  </div>
-                </li>
-              </ul> -->
+         
             </div>
           </div>
         </div>
@@ -322,20 +276,14 @@ header("Pragma: no-cache")
             <li class="dropdown"> <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"> More<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="cart.php">Cart.php</a></li>
-                <li><a href="checkout-step4.php">Proceed to Checkout</a></li>
+                <!-- <li><a href="checkout-step4.php">Proceed to Checkout</a></li> -->
                 <li><a href="checkout-final1.php">My Product</a></li>
-            <!--     <li><a href="checkout.php">Checkout</a></li>
-                <li><a href="cart.php">Shoping Cart</a></li>
-                <li><a href="checkout-step1.php">Billing & shipping address</a></li>
-                <li><a href="checkout-step2.php">Delivery method </a></li>
-                <li><a href="checkout-step3.php">Payment method</a></li>
-                <li><a href="checkout-step4.php">Order riview</a></li>
-                <li><a href="404.php">Page Notfound</a></li> -->
+      
               </ul>
             </li>
             
             <li><a href="contact-us.php">CONTACT US</a></li>
-            <li><a href="about-us.php">ABOUT US</a></li>
+      
           </ul>
         </div>
       </nav>
