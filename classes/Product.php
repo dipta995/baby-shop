@@ -197,7 +197,8 @@ public function getAllSoldProductadmin(){
 	    $div = explode('.', $file_name);
 	    $file_ext = strtolower(end($div));
 	    $unique_image = substr(md5(time()), 0, 10).'.'.$file_ext;
-	    $uploaded_image = "upload/".$unique_image;
+	    $uploaded_image = "images/".$unique_image;
+	    $move_image = "../images/".$unique_image;
 
 	    if ($productName == "" || $total_quantity == "" || $catId =="" || $brandId == "" || $body== "" || $price == "" ) {
 	    	$msg = "<span class='error'>Field must not be empty.</span>";
@@ -212,7 +213,7 @@ public function getAllSoldProductadmin(){
 		     echo "<span class='error'>You can upload only:-"
 		     .implode(', ', $permited)."</span>";
 		    }else{
-		    move_uploaded_file($file_temp, $uploaded_image);
+		    move_uploaded_file($file_temp, $move_image);
 		
 		    $query = "UPDATE tbl_product
 		    			SET

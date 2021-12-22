@@ -85,6 +85,8 @@ $quant = $qa->getAllQuantity();
    <div class="form-outline mb-4">
     <label class="form-label" for="form4Example1">Product Image</label>
     <input type="file" name="image" id="form4Example1" class="form-control" />
+
+    <img style="height:100px;width: 100px;" src="../<?php echo $result['image'] ?>">
   </div>
 
   <!-- Message input -->

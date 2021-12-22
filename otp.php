@@ -13,13 +13,17 @@ $cl = new Customerlogin();
  
 ?>
 <?php 
-
- 
-  if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['register'])) {
-     
-    $data =  $cl->customerregister($_POST);
+if (!isset($_GET['otp'])) {
+  echo "<script> window.location = 'register.php';</script>";
+}else{
+  $email = $_GET['otp'];
+}
+  if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['login'],$_GET['otp'])) {
+     $otp = $_POST['otp'];
+    $data = $cl->customerOtp($otp,$email);
 
   }
+ 
  ?>
 <!DOCTYPE html>
 <html>
@@ -44,28 +48,17 @@ $cl = new Customerlogin();
 
     <!-- Login Form -->
     <form method="post" action="">
-      <span style="color:red;">
-        
-     
-      <?php 
-
-      if (isset($data)) {
+      <?php if (isset($data)) {
         echo $data;
-      }
-       ?> 
-     </span>
-      <input type="text" id="login" class="fadeIn second" name="firstName" placeholder="First Name">
-      <input type="text" id="login" class="fadeIn second" name="lastName" placeholder="Last Name">
-      <input type="text" id="login" class="fadeIn second" name="phone" placeholder="+8801*********">
-      <input type="email" id="login" class="fadeIn second" name="email" placeholder="example@email.com">
-      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
-      <textarea placeholder="Your Home Address" class="fadeIn second" name="address"></textarea>
-      <input name="register" type="submit" class="fadeIn fourth" value="Create">
+      } ?>
+      <input type="text" class="fadeIn second" name="otp" placeholder="Your otp number">
+       
+      <input name="login" type="submit" class="fadeIn fourth" value="Log In">
     </form>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="login.php">Login</a>
+      <a class="underlineHover" href="register.php">Create New</a>
     </div>
 
   </div>
@@ -188,7 +181,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   transform: scale(0.95);
 }
 
-input[type=text],input[type=email],textarea {
+input[type=text],input[type=email] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
