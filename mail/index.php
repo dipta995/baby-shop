@@ -16,9 +16,9 @@ try {
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 465; // or 587
     $mail->IsHTML(true);
-    $mail->Username = "maryolivia2520@gmail.com";
+    $mail->Username = "sadmansakib7010@gmail.com";
     $mail->Password = PASSWORD;
-    $mail->SetFrom("maryolivia2520@gmail.com");
+    $mail->SetFrom("sadmansakib7010@gmail.com");
     // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');   
      $mail->isHTML(true); 
     $mail->Subject = "Test";

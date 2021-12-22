@@ -1,2 +1,2 @@
 <?php
-define('PASSWORD','ilove45683'); // your password
+define('PASSWORD','$SadmaNsakib@#9394@#$'); // your password

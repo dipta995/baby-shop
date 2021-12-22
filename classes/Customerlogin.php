@@ -171,9 +171,9 @@ include_once ($filepath.'/../helpers/Format.php');
        $mail->Host = "smtp.gmail.com";
        $mail->Port = 465; // or 587
        $mail->IsHTML(true);
-       $mail->Username = "robinhossainrabbiz5@gmail.com";
+       $mail->Username = "sadmansakib7010@gmail.com";
        $mail->Password =PASSWORD;
-       $mail->SetFrom("robinhossainrabbiz5@gmail.com");
+       $mail->SetFrom("sadmansakib7010@gmail.com");
        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');   
         $mail->isHTML(true); 
        $mail->Subject = "Your Otp And link";

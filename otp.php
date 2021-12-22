@@ -53,7 +53,7 @@ if (!isset($_GET['otp'])) {
       } ?>
       <input type="text" class="fadeIn second" name="otp" placeholder="Your otp number">
        
-      <input name="login" type="submit" class="fadeIn fourth" value="Log In">
+      <input name="login" type="submit" class="fadeIn fourth" value="Confirm">
     </form>
 
     <!-- Remind Passowrd -->
