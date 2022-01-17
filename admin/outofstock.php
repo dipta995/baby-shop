@@ -1,4 +1,4 @@
- <?php include 'inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
  <div class="container-fluid">
         <h1 class="mt-4"> All  Products <a href="product.php">Upload New Product</a></h1>
 
@@ -25,7 +25,7 @@
 							<th>Price</th>
                             <th>Sold</th>
                             <th>Product Code</th>
-                            <th>Uploader</th>
+                           
                             <th>Edit</th>
                             <th>Delete</th>
 						</tr>
@@ -45,7 +45,7 @@
                       }else{
 
                       }
-                $getApd = $pd->getAllProductadmin();
+                $getApd = $pd->getAllProductadminByOutofStock();
                 if ($getApd) {
                 	$a = 0;
                   while ($result = $getApd->fetch_assoc()) {
@@ -68,7 +68,7 @@
 								echo "Available";
 							}else{echo "Sold";}  ?></td>
 							<td><?php echo $result['productCode']; ?></td>
-							<td><?php echo $result['admin_id']; ?></td>
+							 
 						 
                             <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="editproduct.php?proid=<?php echo $result['productId'] ?>" class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></a></p></td>
     <td><p data-placement="top" data-toggle="tooltip" title="Delete"><a href="?delpr=<?php echo $result['productId']; ?>" class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></a></p></td>

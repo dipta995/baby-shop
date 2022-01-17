@@ -1,5 +1,3 @@
- 
-
 <?php 
 include '../lib/Database.php'; 
  
@@ -38,23 +36,12 @@ if (($_SESSION['adminlogin']!=true)) {
   <meta name="author" content="">
 
   <title>Admin</title>
-
-
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
   <link href="css/datatable.css" rel="stylesheet">
-
-
-
-
-
-
-
-
-
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -66,12 +53,8 @@ if (($_SESSION['adminlogin']!=true)) {
 <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css">
-
-
 </head>
-
 <body>
-
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
@@ -82,6 +65,7 @@ if (($_SESSION['adminlogin']!=true)) {
         <a href="cat.php" class="list-group-item list-group-item-action bg-light">Catagory</a>
         <a href="brand.php" class="list-group-item list-group-item-action bg-light">Brand</a>
         <a href="product.php" class="list-group-item list-group-item-action bg-light">Products</a>
+        <a href="outofstock.php" class="list-group-item list-group-item-action bg-light">Out of stock</a>
         <a href="order.php" class="list-group-item list-group-item-action bg-light">Order Product</a>
         <a href="customer.php" class="list-group-item list-group-item-action bg-light">Customer</a>
       <a href="message.php" class="list-group-item list-group-item-action bg-light">Message</a>
@@ -103,7 +87,7 @@ if (($_SESSION['adminlogin']!=true)) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><?php echo $_SESSION['adminName']; ?></a>

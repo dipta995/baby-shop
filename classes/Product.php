@@ -110,6 +110,11 @@ public function getAllSoldProductadmin(){
 			$result = $this->db->select($query);
 			return $result;
 		}
+	public function getAllProductadminByOutofStock(){
+			$query = "SELECT * FROM tbl_product LEFT JOIN tbl_catagory ON tbl_product.catId = tbl_catagory.catId INNER JOIN tbl_brand ON  tbl_product.brandId =tbl_brand.brandId INNER JOIN  tbl_quantity ON tbl_product.quantityId =tbl_quantity.quantityId WHERE total_quantity='0'";
+			$result = $this->db->select($query);
+			return $result;
+		}
 
 
 	public function Insertproduct($data,$file){

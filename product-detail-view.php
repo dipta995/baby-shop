@@ -161,7 +161,7 @@
     }
                        ?>
                       <form action="" method="post">
-            <input type="number" class="buyfield" name="quantity" value="0" max="<?php echo $result['total_quantity']; ?>"/>
+            <input type="number" class="buyfield" name="quantity" min="0" value="0" max="<?php echo $result['total_quantity']; ?>"/>
              <div class="add-to-cart">
 			 <?php 
 			 if($result['total_quantity']>0){			 ?>

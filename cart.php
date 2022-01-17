@@ -60,7 +60,7 @@
                        
                       <form action="" method="post">
               <input type="hidden" name="cartId" value="<?php echo $result['cartId']?>"/>
-			  <input type="number" name="quantity" value="<?php echo $result['quantity']?>"  max="<?php echo $result['total_quantity']; ?>"/>
+			  <input type="number" name="quantity" min="0" value="<?php echo $result['quantity']?>"  max="<?php echo $result['total_quantity']; ?>"/>
               <input type="submit" name="submit" value="Update"/>
             </form>
                     </div></td>
